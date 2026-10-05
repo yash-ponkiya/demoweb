@@ -34,5 +34,14 @@ You can test the role-based login redirection rules (configured via LoginWP) usi
 - **User:** `testuser`
 - **Pass:** `testuser123`
 
+## Role-based access
+
+The site includes a theme-independent WordPress must-use plugin at `wp-content/mu-plugins/role-access.php`, so no manual plugin activation is required after importing the database.
+
+- Visitors see one clear **Login** control on the website.
+- Administrators sign in to the WordPress dashboard.
+- Learners sign in to a responsive front-end learning portal, where they can update their name and email address.
+- Learner accounts are kept out of `/wp-admin/` while AJAX requests remain compatible with WordPress plugins.
+
 ---
 *Developed by Yash Ponkiya using Astra, native Gutenberg blocks, and WordPress core tools to strictly adhere to the "no custom coding" requirement.*
